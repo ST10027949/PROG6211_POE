@@ -13,7 +13,42 @@ namespace ST10027949_TedNgobeni_PROG6221_POE_P1
         public int NumberOfSteps { get; private set; }
         public string[] StepDescriptions { get; private set; }
 
-      
+        public void IntroDisplay()
+        {
+            Console.WriteLine("Welcome to the recipe program: ");
+        }
+        private void GetIngredientDetails()
+        {
+
+            Console.Write("Please enter accordingly ;) \n");
+            Console.Write("\n***************************************************\n");
+
+            //User input for ingredients 
+            Console.Write("\nEnter the number of ingredients: ");
+            NumberOfIngredients = int.Parse(Console.ReadLine());
+
+            //Creates arrays to hold inputs
+            IngredientNames = new string[NumberOfIngredients];
+            IngredientQuantities = new double[NumberOfIngredients];
+            MeasurementUnit = new string[NumberOfIngredients];
+
+            //For loop that iterates through the amount of ingredients 
+            for (int i = 0; i < NumberOfIngredients; i++)
+            {
+                Console.WriteLine($"\nIngredient {i + 1}\n");
+
+                Console.Write("Name: ");
+                IngredientNames[i] = Console.ReadLine();
+
+                Console.Write("Quantity: ");
+                IngredientQuantities[i] = double.Parse(Console.ReadLine());
+
+                Console.Write("Unit: ");
+                MeasurementUnit[i] = Console.ReadLine();
+            }
+        }
+
+       
     }
 
     class Program
@@ -21,7 +56,6 @@ namespace ST10027949_TedNgobeni_PROG6221_POE_P1
         static void Main(string[] args)
         {
             Recipe recipe = new Recipe();
-          
         }
     }
 
