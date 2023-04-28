@@ -126,7 +126,12 @@ namespace ST10027949_TedNgobeni_PROG6221_POE_P1
         static void Main(string[] args)
         {
             Recipe recipe = new Recipe();
+            recipe.DisplayRecipe();
 
+            Console.WriteLine("\nDo you want to scale the recipe? (Y/N)");
+            string scaleResponse = Console.ReadLine();
+
+            
         }
     }
 
