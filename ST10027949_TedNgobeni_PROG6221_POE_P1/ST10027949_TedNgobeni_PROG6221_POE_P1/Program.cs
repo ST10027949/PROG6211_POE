@@ -140,7 +140,10 @@ namespace ST10027949_TedNgobeni_PROG6221_POE_P1
                 recipe.ScaleRecipe(scaleFactor);
             }
 
-            
+            Console.WriteLine("\nDo you want to reset the ingredient details? (Y/N)");
+            string resetResponse = Console.ReadLine();
+
+           
         }
     }
 
