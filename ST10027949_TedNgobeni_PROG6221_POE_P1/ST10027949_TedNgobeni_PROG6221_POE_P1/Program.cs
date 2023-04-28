@@ -18,7 +18,6 @@ namespace ST10027949_TedNgobeni_PROG6221_POE_P1
             Console.WriteLine("Welcome to the recipe program: ");
         }
 
-
         //Get method that asks for user input
         private void GetIngredientDetails()
         {
@@ -88,6 +87,12 @@ namespace ST10027949_TedNgobeni_PROG6221_POE_P1
             }
         }
 
+        //Reset method that resets the ingredients by calling initial getIngredients method
+        public void ResetIngredients()
+        {
+            GetIngredientDetails();
+            Console.WriteLine("\nIngredient details reset.");
+        }
     }
 
     class Program
