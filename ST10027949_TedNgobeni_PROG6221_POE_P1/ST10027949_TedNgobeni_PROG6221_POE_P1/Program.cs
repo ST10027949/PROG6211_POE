@@ -71,6 +71,23 @@ namespace ST10027949_TedNgobeni_PROG6221_POE_P1
             }
         }
 
+        //Scale method that scales the recipe 
+        public void ScaleRecipe(double scaleFactor)
+        {
+            //For loop that iterates through all the ingredients 
+            for (int i = 0; i < NumberOfIngredients; i++)
+            {
+                IngredientQuantities[i] *= scaleFactor;
+            }
+
+            //Displays the updated ingredients 
+            Console.WriteLine("\nUpdated ingredient quantities:");
+            for (int i = 0; i < NumberOfIngredients; i++)
+            {
+                Console.WriteLine($" {i + 1}. {IngredientQuantities[i]} {MeasurementUnit[i]} of {IngredientNames[i]}");
+            }
+        }
+
     }
 
     class Program
