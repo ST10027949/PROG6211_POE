@@ -12,7 +12,12 @@ namespace ST10027949_TedNgobeni_PROG6221_POE_P1
         public string[] MeasurementUnit { get; private set; }
         public int NumberOfSteps { get; private set; }
         public string[] StepDescriptions { get; private set; }
-       
+
+        public void IntroDisplay()
+        {
+            Console.WriteLine("Welcome to the recipe program: ");
+        }
+
 
         //Get method that asks for user input
         private void GetIngredientDetails()
@@ -65,6 +70,7 @@ namespace ST10027949_TedNgobeni_PROG6221_POE_P1
                 StepDescriptions[i] = Console.ReadLine();
             }
         }
+
     }
 
     class Program
@@ -72,6 +78,7 @@ namespace ST10027949_TedNgobeni_PROG6221_POE_P1
         static void Main(string[] args)
         {
             Recipe recipe = new Recipe();
+            
         }
     }
 
