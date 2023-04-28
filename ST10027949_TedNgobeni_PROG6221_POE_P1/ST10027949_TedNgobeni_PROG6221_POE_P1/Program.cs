@@ -143,7 +143,12 @@ namespace ST10027949_TedNgobeni_PROG6221_POE_P1
             Console.WriteLine("\nDo you want to reset the ingredient details? (Y/N)");
             string resetResponse = Console.ReadLine();
 
-           
+            //Loop that will reset the program and ask for a new recipe if the user wishes to reset.
+            if (resetResponse.ToUpper() == "Y")
+            {
+                recipe.ResetIngredients();
+                recipe.DisplayRecipe();
+            }
         }
     }
 
