@@ -131,6 +131,15 @@ namespace ST10027949_TedNgobeni_PROG6221_POE_P1
             Console.WriteLine("\nDo you want to scale the recipe? (Y/N)");
             string scaleResponse = Console.ReadLine();
 
+            //Loop that will call scale method if the user wishes to scale recipe 
+            if (scaleResponse.ToUpper() == "Y")
+            {
+                Console.WriteLine("\nBy what factor do you want to scale the recipe? (0.5, 2, 3)");
+                double scaleFactor = double.Parse(Console.ReadLine());
+
+                recipe.ScaleRecipe(scaleFactor);
+            }
+
             
         }
     }
