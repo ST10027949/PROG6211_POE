@@ -1,0 +1,41 @@
+Recipe Program READ ME 
+
+GitHub Link: https://github.com/ST10027949/PROG6211_POE
+
+Recipe Program POE Part 2 Updates:
+
+Following my POE Part 2 submission my application was lacking when it came to the functional requirements it needed to have. Here are the following updates that have been made to the program to help improve the overalll user friendliness as well as all the needed requirements to make it a even better application:
+
+1. When it came to the comments that were in my code i could have provided more detail as to how the logic of the application is explained. In the updated application the comments i have provided go into more detail.
+
+2. In the previous application i had not implemented generic colletctions for all the infromation that was entered by the user. In the updated application i have updated how the information is stored. This is done by using array lists. 
+
+
+How to run the application on your computer:
+
+1. Install Visual Studio. You can download Visual Studio from the Microsoft website.
+
+2. Create a new project. In Visual Studio, click on "File" and then "New". Select "Project" from the list of options.
+
+3. Select a C# template. In the "Project types" window, select "Visual C#" and then "Windows". In the "Templates" window, select "Console Application".
+
+4. Give your project a name. In the "Name" field, enter a name for your project.
+
+5. Click on "Create". Visual Studio will create a new project for you.
+
+6. Clone the GitHub repository. In a terminal window, navigate to the directory where you want to store the cloned repository. Then, run the following command:
+"git clone https://github.com/<username>/<repository-name>.git"
+Replace <username> with your GitHub username and <repository-name> with the name of the repository that you want to clone.
+
+7. Open the solution file. In Visual Studio, open the solution file for the cloned repository. The solution file will have a .sln extension.
+
+8. Build the solution. In Visual Studio, click on "Build" and then "Build Solution". This will compile the code for the application.
+
+9. Run the application. In Visual Studio, click on "Debug" and then "Start Without Debugging". This will run the application.
+
+NOTE:
+- If you are using a Windows computer, you may need to install the .NET Framework before you can run the application. You can download the .NET Framework from the Microsoft website.
+- If you are using a Mac computer, you may need to install Mono before you can run the application. You can download Mono from the Mono website.
+- If you are using a Linux computer, you may need to install Mono or the .NET Core Framework before you can run the application. You can download Mono from the Mono website or the .NET Core Framework from the .NET Core website.
+
+
